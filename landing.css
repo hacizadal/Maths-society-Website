@@ -92,6 +92,24 @@ body {
     font-weight: 900;
 }
 
+.hero-btn {
+    display: inline-block;
+    margin-top: 2rem;
+    padding: 1rem 2.5rem;
+    background-color: var(--bg-maroon);
+    color: var(--text-beige);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.hero-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(128, 0, 0, 0.4);
+}
+
 /* --- Mission Section --- */
 #mission {
     background-color: var(--bg-maroon);
