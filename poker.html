@@ -9,6 +9,30 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="landing.css">
     <script src="https://kit.fontawesome.com/a2bed480e7.js" crossorigin="anonymous"></script>
+    <style>
+        .highlight-box {
+            background-color: rgba(128, 0, 0, 0.1);
+            padding: 1.5rem;
+            border-left: 4px solid var(--bg-maroon);
+            margin: 1.5rem 0;
+            border-radius: 4px;
+        }
+        .image-container {
+            text-align: center;
+            margin: 2rem 0;
+        }
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(128, 0, 0, 0.3);
+        }
+        .image-caption {
+            font-style: italic;
+            margin-top: 0.5rem;
+            color: var(--text-maroon);
+        }
+    </style>
 </head>
 <body>
     <!--NAVBAR-->
@@ -38,48 +62,135 @@
     <!--HERO SECTION-->
     <section id="hero">
         <div class="hero-content">
-            <h1>Math Behind Poker</h1>
-            <p style="font-size: 1.3rem; margin-top: 1rem; max-width: 800px;">Exploring probability, game theory, and strategic decision-making</p>
+            <h1>Bluffing: A Game-Theoretic Perspective</h1>
+            <p style="font-size: 1.3rem; margin-top: 1rem; max-width: 800px;">Why Mathematics Proves That Lying Actually Works</p>
         </div>
     </section>
 
-    <!--CONTENT SECTION-->
+    <!--CONTENT-->
     <section id="explanation">
         <div class="container" style="max-width: 900px;">
             <div class="content-block">
-                <h2 style="font-size: 2rem; margin-bottom: 1rem; color: var(--text-maroon);">Introduction</h2>
-                <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 2rem;">
-                    Poker is more than just a card game—it's a fascinating application of mathematics. From calculating odds 
-                    to understanding expected value, poker demonstrates how mathematical thinking can give you a competitive edge.
+                <p style="font-size: 1.15rem; line-height: 1.8;">
+                    <em>Ever wondered why your poker-faced friend keeps winning, even with terrible cards?</em><br>
+                    It's not luck—it's mathematics!
+                </p>
+                
+                <p style="margin-top: 1.5rem;">
+                    This was the <strong>3rd episode of "The Math Behind..." series</strong>, where we explored the mathematics 
+                    of poker and game theory. Led by <strong>Professor Keivan Mallahi Karai</strong>, the seminar tackled a 
+                    fascinating question: <em>Why does bluffing actually work?</em> And more importantly, can we prove it mathematically?
                 </p>
 
-                <h2 style="font-size: 2rem; margin-bottom: 1rem; color: var(--text-maroon);">Probability in Poker</h2>
-                <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 2rem;">
-                    Every decision in poker is rooted in probability. Understanding the likelihood of certain hands, 
-                    calculating pot odds, and determining implied odds are all essential mathematical skills. 
-                    For example, the probability of being dealt a pocket pair is approximately 5.9%, while the 
-                    probability of flopping a set with that pair is about 11.8%.
+                <h2 style="margin-top: 3rem;">The Seminar Journey</h2>
+                
+                <p style="margin-top: 1rem;">
+                    Professor Mallahi Karai started with a simplified version of poker—a game he designed specifically to demonstrate 
+                    the core mathematical principles without overwhelming complexity. Step by step, he built up the concepts, showing 
+                    how probability, expected value, and Nash equilibrium all come together to explain why bluffing is not just a 
+                    psychological trick, but a mathematically optimal strategy.
                 </p>
 
-                <h2 style="font-size: 2rem; margin-bottom: 1rem; color: var(--text-maroon);">Expected Value (EV)</h2>
-                <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 2rem;">
-                    Expected value is the cornerstone of profitable poker play. It represents the average amount 
-                    you can expect to win or lose on a particular decision over the long run. A positive EV decision 
-                    is one that will be profitable over time, even if it doesn't work out in the short term.
+                <div class="highlight-box">
+                    <strong>The Big Reveal:</strong> In game theory, bluffing isn't about being deceptive—it's about creating 
+                    uncertainty. When you mix strong hands with bluffs in the right proportions, you become unexploitable. Your 
+                    opponents can't counter your strategy because they can never be sure what you're holding.
+                </div>
+
+                <h2 style="margin-top: 3rem;">Key Concepts Explored</h2>
+                
+                <h3 style="color: var(--bg-maroon); margin-top: 2rem;">1. Probability and Expected Value</h3>
+                <p>
+                    Every decision in poker comes down to expected value (EV)—the average amount you can expect to win or lose 
+                    over the long run. When you calculate pot odds and compare them to the probability of completing your hand, 
+                    you're doing pure mathematics. A positive EV decision is profitable over time, even if it doesn't work out 
+                    in a single hand.
                 </p>
 
-                <h2 style="font-size: 2rem; margin-bottom: 1rem; color: var(--text-maroon);">Game Theory and Nash Equilibrium</h2>
-                <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 2rem;">
-                    Modern poker strategy heavily relies on game theory optimal (GTO) play. This approach uses Nash 
-                    equilibrium concepts to create unexploitable strategies. By balancing ranges and bet sizes 
-                    mathematically, players can ensure they can't be consistently beaten by opponents.
+                <h3 style="color: var(--bg-maroon); margin-top: 2rem;">2. Game Theory and Nash Equilibrium</h3>
+                <p>
+                    Modern poker is heavily influenced by Game Theory Optimal (GTO) play. This approach uses Nash equilibrium—a 
+                    state where no player can improve their outcome by changing strategy alone. When you play GTO poker, you 
+                    balance your ranges mathematically so that opponents can't exploit you, regardless of what they do.
                 </p>
 
-                <h2 style="font-size: 2rem; margin-bottom: 1rem; color: var(--text-maroon);">Combinatorics</h2>
-                <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 2rem;">
-                    Understanding combinations is crucial in poker. With 52 cards in a deck, there are 2,598,960 
-                    possible 5-card combinations. Knowing how to calculate the number of ways certain hands can be 
-                    made helps players estimate their equity in any given situation.
+                <p style="margin-top: 1rem;">
+                    This is where bluffing becomes essential: if you only bet with strong hands, opponents will simply fold every 
+                    time. But if you occasionally bluff in mathematically calculated proportions, you force them into impossible 
+                    decisions.
+                </p>
+
+                <h3 style="color: var(--bg-maroon); margin-top: 2rem;">3. Mixed Strategy Equilibrium</h3>
+                <p>
+                    The key insight is that optimal poker requires <strong>mixed strategies</strong>—randomly mixing between 
+                    different actions (betting, checking, folding) based on calculated frequencies. You can't always bet with 
+                    the nuts and always fold with nothing, because patterns are exploitable. The mathematics tells us exactly 
+                    how often to bluff to remain balanced.
+                </p>
+
+                <div class="highlight-box">
+                    <strong>Mathematical Proof:</strong> In a simplified poker game, if you never bluff, your opponent should 
+                    always fold to your bets. If you always bluff, your opponent should always call. But when you bluff at the 
+                    right frequency—determined by pot odds and bet sizes—your opponent is indifferent between calling and folding. 
+                    That's mathematical equilibrium.
+                </div>
+
+                <h2 style="margin-top: 3rem;">From Theory to Practice</h2>
+                
+                <p style="font-size: 1.1rem; line-height: 1.8;">
+                    After the lecture, we didn't just leave it at theory. The seminar concluded with an actual poker game where 
+                    <strong>Math Society staff served as table dealers</strong>. Instead of betting money, participants wagered 
+                    <strong>candies</strong>—making it both fun and accessible while still demonstrating real poker dynamics.
+                </p>
+
+                <p style="font-size: 1.1rem; line-height: 1.8; margin-top: 1rem;">
+                    Watching theory transform into practice was amazing. You could see players start to think differently about 
+                    their decisions, considering not just their cards but the mathematical implications of their betting patterns 
+                    and opponents' possible ranges.
+                </p>
+
+                <!-- PLACEHOLDER FOR IMAGES -->
+                <div class="image-container">
+                    <p style="font-style: italic; color: var(--bg-maroon);">[Event photos will be added here]</p>
+                </div>
+
+                <h2 style="margin-top: 3rem;">What We Learned</h2>
+                
+                <p style="font-size: 1.1rem; line-height: 1.8;">
+                    <strong>1. Mathematics Governs Strategy:</strong> What seems like psychology and "reading people" is actually 
+                    grounded in probability theory and game theory. The best players aren't psychics—they're mathematicians who 
+                    understand equity, frequencies, and equilibrium.
+                </p>
+
+                <p style="font-size: 1.1rem; line-height: 1.8; margin-top: 1rem;">
+                    <strong>2. Optimal Play Requires Unpredictability:</strong> The math proves that being perfectly balanced 
+                    means being unpredictable. This is why GTO strategies often involve randomization—you need to keep opponents 
+                    guessing in mathematically precise ways.
+                </p>
+
+                <p style="font-size: 1.1rem; line-height: 1.8; margin-top: 1rem;">
+                    <strong>3. Real-World Applications:</strong> Game theory extends far beyond poker. The same principles apply 
+                    to economics, military strategy, negotiation, and even evolutionary biology. Understanding Nash equilibrium 
+                    helps us model competitive situations in countless fields.
+                </p>
+
+                <p style="font-size: 1.1rem; line-height: 1.8; margin-top: 1rem;">
+                    <strong>4. Theory Meets Practice:</strong> Having the poker game immediately after the lecture reinforced 
+                    the concepts. It's one thing to understand the math on paper, but quite another to apply it in real-time 
+                    decisions with candy (or money!) on the line.
+                </p>
+
+                <h2 style="margin-top: 3rem;">Further Exploration</h2>
+                <p>
+                    If you're interested in diving deeper into the mathematics of poker, resources like "The Mathematics of Poker" 
+                    by Bill Chen and Jerrod Ankenman provide rigorous treatment of game theory concepts. For those interested in 
+                    GTO strategies, solver software like PioSolver demonstrates how these mathematical principles translate into 
+                    actual play.
+                </p>
+
+                <p style="margin-top: 1.5rem; font-style: italic;">
+                    And remember: the next time someone calls your bluff, you can confidently tell them you were just maintaining 
+                    mathematical equilibrium!
                 </p>
             </div>
         </div>
