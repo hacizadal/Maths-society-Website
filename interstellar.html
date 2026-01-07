@@ -9,6 +9,34 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="landing.css">
     <script src="https://kit.fontawesome.com/a2bed480e7.js" crossorigin="anonymous"></script>
+    <style>
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+            max-width: 900px;
+            margin: 2rem auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(128, 0, 0, 0.3);
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        .equation {
+            background-color: rgba(128, 0, 0, 0.1);
+            padding: 1rem;
+            border-left: 4px solid var(--bg-maroon);
+            margin: 1rem 0;
+            font-family: 'Courier New', monospace;
+            overflow-x: auto;
+        }
+    </style>
 </head>
 <body>
     <!--NAVBAR-->
@@ -38,59 +66,219 @@
     <!--HERO SECTION-->
     <section id="hero">
         <div class="hero-content">
-            <h1>Math Behind Interstellar</h1>
-            <p style="font-size: 1.3rem; margin-top: 1rem; max-width: 800px;">The physics and mathematics that made the movie scientifically accurate</p>
+            <h1>When Math Meets Cinema: Interstellar</h1>
+            <p style="font-size: 1.3rem; margin-top: 1rem; max-width: 800px;">Exploring the physics and mathematics behind Christopher Nolan's masterpiece</p>
         </div>
     </section>
 
-    <!--CONTENT SECTION-->
+    <!--VIDEO SECTION-->
+    <section id="explanation">
+        <div class="container" style="max-width: 900px;">
+            <h2 style="font-size: 2rem; margin-bottom: 1rem; color: var(--text-maroon); text-align: center;">Watch the Full Seminar</h2>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/3kiHD9kYGrc" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                </iframe>
+            </div>
+            <p style="text-align: center; font-style: italic; margin-top: 1rem;">
+                Presented by Pratikeet (Freshman) and Tashar (Second Year)<br>
+                Math Society Topic Tutorial Series - Episode 2
+            </p>
+        </div>
+    </section>
+
+    <!--CONTENT SECTIONS-->
     <section id="explanation">
         <div class="container" style="max-width: 900px;">
             <div class="content-block">
-                <h2 style="font-size: 2rem; margin-bottom: 1rem; color: var(--text-maroon);">Introduction</h2>
-                <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 2rem;">
-                    Christopher Nolan's Interstellar is renowned for its scientific accuracy. The film's depiction of 
-                    black holes, wormholes, and time dilation is based on real physics, thanks to the collaboration 
-                    with physicist Kip Thorne. The mathematics behind these phenomena is both beautiful and complex.
+                <h2>About the Movie</h2>
+                <p>
+                    <strong>Interstellar (2014)</strong> is a science fiction masterpiece directed by Christopher Nolan. 
+                    The film features Matthew McConaughey as Cooper, a NASA engineer and pilot who attempts to save dying 
+                    humanity by finding a new planet through a wormhole near Saturn.
+                </p>
+                <p style="margin-top: 1rem;">
+                    What makes Interstellar unique is its collaboration with <strong>Kip Thorne</strong>, a Nobel Prize-winning 
+                    physicist who served as the scientific advisor. Thorne derived formulas specifically for the visual effects 
+                    and helped create the most accurate black hole visualization ever seen in cinema—Gargantua.
+                </p>
+                <p style="margin-top: 1rem;">
+                    Hans Zimmer's iconic score features ticking at 1.25-second intervals, where each tick represents 
+                    <strong>one day passing on Earth</strong>—a subtle detail that emphasizes the time dilation theme.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="mission">
+        <h2>Main Questions Explored</h2>
+    </section>
+
+    <section id="explanation">
+        <div class="container" style="max-width: 900px;">
+            <div class="content-block">
+                <h2>Question 1: How Far is Miller's Planet from Gargantua?</h2>
+                <p>
+                    Miller's planet experiences extreme time dilation where <strong>1 hour on the planet equals 7 years on Earth</strong>. 
+                    The planet also features massive tidal waves 1.2 km high and has 130% of Earth's gravity.
+                </p>
+                
+                <h3 style="margin-top: 2rem;">The Mathematics</h3>
+                <p>Using tidal acceleration and energy conservation, we can derive the distance:</p>
+                
+                <div class="equation">
+                    Tidal acceleration: a ≈ (G·M·y) / d³<br>
+                    Where G = Newton's constant, M = Mass of Gargantua, d = Distance
+                </div>
+
+                <p style="margin-top: 1rem;">
+                    After applying the work-energy theorem and integrating using the Mean Value Theorem:
                 </p>
 
-                <h2 style="font-size: 2rem; margin-bottom: 1rem; color: var(--text-maroon);">Time Dilation and Special Relativity</h2>
-                <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 2rem;">
-                    One of the most dramatic scenes involves Miller's planet, where extreme time dilation occurs. 
-                    Due to the planet's proximity to the black hole Gargantua, one hour on the planet equals seven years 
-                    on Earth. This is described by Einstein's equations of general relativity, specifically the Schwarzschild metric 
-                    for massive objects.
+                <div class="equation">
+                    d = ∛(3·M·R⁴ / (2·m·H))<br>
+                    <br>
+                    <strong>Result: 4.5 billion km from Gargantua's center</strong>
+                </div>
+
+                <h3 style="margin-top: 2rem;">The Problem: Time Dilation Inconsistency</h3>
+                <p>
+                    The movie claims a time dilation factor of <strong>6,000</strong> (1 hour = 7 years).<br>
+                    However, using the actual physics equations with the calculated distance, the time dilation factor is only <strong>1.05</strong>.
+                </p>
+                <p style="margin-top: 1rem; font-weight: bold; color: var(--bg-maroon);">
+                    Conclusion: The solution is NOT scientifically valid. This is where science fiction takes over from science fact.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="mission">
+        <h2>Question 2: Why Wasn't Cooper Spaghettified?</h2>
+    </section>
+
+    <section id="explanation">
+        <div class="container" style="max-width: 900px;">
+            <div class="content-block">
+                <h2>Brane Cosmology Theory</h2>
+                <p>
+                    <strong>Branes</strong> (short for "membrane") are a concept from string theory. Our universe exists as 
+                    the middle layer between two "confining branes" that allow interaction with higher dimensions.
+                </p>
+                
+                <h3 style="margin-top: 2rem;">What Happens to Cooper:</h3>
+                <ol style="margin-left: 2rem; line-height: 1.8;">
+                    <li>Falls through Gargantua (the black hole)</li>
+                    <li>Transferred from our brane to a confining brane</li>
+                    <li>Enters a 5-dimensional tesseract</li>
+                    <li>Can interact with different points in spacetime simultaneously</li>
+                </ol>
+
+                <h2 style="margin-top: 2rem;">Einstein's Field Equations</h2>
+                <p>The mathematics behind spacetime curvature:</p>
+                
+                <div class="equation">
+                    R_μν - (1/2)g_μν·R = Λ·g_μν
+                </div>
+
+                <p style="margin-top: 1rem;">
+                    <strong>Left side:</strong> Ricci curvature tensor (describes local spacetime curvature)<br>
+                    <strong>Right side:</strong> Metric tensor (describes geometry)<br>
+                    <strong>Λ:</strong> Cosmological constant (determines universe shape)
                 </p>
 
-                <h2 style="font-size: 2rem; margin-bottom: 1rem; color: var(--text-maroon);">Black Holes and the Einstein Field Equations</h2>
-                <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 2rem;">
-                    The visualization of Gargantua was created using equations derived from Einstein's field equations. 
-                    The distinctive accretion disk and gravitational lensing effects required solving complex ray-tracing 
-                    equations in curved spacetime. The rendering was so accurate that it led to new discoveries in 
-                    astrophysics visualization.
+                <h2 style="margin-top: 2rem;">De Sitter vs. Anti-de Sitter Spaces</h2>
+                
+                <h3>De Sitter Space (Positive Curvature)</h3>
+                <div class="equation">
+                    f(r) = 1/√(1 - α²·r²)
+                </div>
+                <p>
+                    Distances are <strong>enlarged</strong>. Space curves outward like a sphere.
                 </p>
 
-                <h2 style="font-size: 2rem; margin-bottom: 1rem; color: var(--text-maroon);">Wormholes and Exotic Matter</h2>
-                <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 2rem;">
-                    The film's wormhole connecting distant parts of space is based on solutions to Einstein's equations. 
-                    However, keeping a wormhole stable requires exotic matter with negative energy density—a concept that 
-                    remains theoretical. The mathematics involves solving the Einstein-Rosen bridge equations under 
-                    specific conditions.
+                <h3 style="margin-top: 1.5rem;">Anti-de Sitter Space (Negative Curvature)</h3>
+                <div class="equation">
+                    f(r) = √(1 + r²/R²)
+                </div>
+                <p>
+                    Distances are <strong>crumpled/contracted</strong>. Space curves inward like a saddle.<br>
+                    <strong>This is what Cooper experiences in Gargantua.</strong>
                 </p>
 
-                <h2 style="font-size: 2rem; margin-bottom: 1rem; color: var(--text-maroon);">The Tesseract and Higher Dimensions</h2>
-                <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 2rem;">
-                    The film's climax involves a tesseract—a four-dimensional hypercube where Cooper can communicate 
-                    across time. While highly speculative, the concept draws on real mathematical theories of higher 
-                    dimensions, including Kaluza-Klein theory and string theory, which propose additional spatial dimensions 
-                    beyond our familiar three.
+                <h3 style="margin-top: 2rem;">Distance Crumpling Effect</h3>
+                <p>
+                    <strong>In our brane (normal space):</strong> Gargantua to Earth = 10 billion light-years<br>
+                    <strong>In the confining brane (AdS space):</strong> Distance crumpled to = 1 AU (150 million km)
+                </p>
+                <p style="margin-top: 1rem;">
+                    This is a compression ratio of approximately <strong>67,000,000:1</strong>! This explains how Cooper 
+                    can send gravitational waves from inside Gargantua back to Earth through the tesseract.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="mission">
+        <h2>Problems with the Movie's Physics</h2>
+    </section>
+
+    <section id="explanation">
+        <div class="container" style="max-width: 900px;">
+            <div class="content-block">
+                <h3>1. Instantaneous Communication</h3>
+                <p>
+                    Light takes 8.3 minutes to travel 1 AU. Even with crumpled space, Cooper's messages to Murph 
+                    appear instantaneous, violating known physics.
                 </p>
 
-                <h2 style="font-size: 2rem; margin-bottom: 1rem; color: var(--text-maroon);">Gravitational Slingshot</h2>
-                <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 2rem;">
-                    The Endurance spacecraft uses gravitational assists around planets and Gargantua to conserve fuel. 
-                    This maneuver relies on the conservation of energy and angular momentum, demonstrating how spacecraft 
-                    can "steal" momentum from celestial bodies—a technique used in real space missions.
+                <h3 style="margin-top: 1.5rem;">2. Quantum Entanglement Doesn't Help</h3>
+                <p>
+                    The <strong>No-Communication Theorem</strong> states that two quantum-entangled observers cannot 
+                    exchange information instantaneously, even if gravitational waves were quantum in nature.
+                </p>
+
+                <h3 style="margin-top: 1.5rem;">3. No Spaghettification</h3>
+                <p>
+                    Given our current understanding of black holes, Cooper should have been torn apart by tidal forces. 
+                    The movie doesn't explain why he wasn't.
+                </p>
+
+                <h3 style="margin-top: 1.5rem;">4. Brane Instability</h3>
+                <p>
+                    If confining branes keep pressing on our universe, eventually the branes would buckle and the 
+                    universe would collapse. The model has inherent stability problems.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="mission">
+        <h2>Key Takeaways</h2>
+    </section>
+
+    <section id="explanation">
+        <div class="container" style="max-width: 900px;">
+            <div class="content-block">
+                <p style="font-size: 1.15rem; line-height: 1.9;">
+                    <strong>1. Appreciate the Effort:</strong> While not 100% accurate, Interstellar represents one of 
+                    the most scientifically grounded sci-fi films ever made.
+                </p>
+                <p style="font-size: 1.15rem; line-height: 1.9; margin-top: 1rem;">
+                    <strong>2. Motivation for Learning:</strong> The inconsistencies should inspire us to explore 
+                    unexplored frontiers of physics and push the boundaries of what's possible.
+                </p>
+                <p style="font-size: 1.15rem; line-height: 1.9; margin-top: 1rem;">
+                    <strong>3. Real Achievement:</strong> The movie's visualization of Gargantua was so accurate that 
+                    when the first real black hole image was captured, it looked remarkably similar!
+                </p>
+                <p style="font-size: 1.15rem; line-height: 1.9; margin-top: 1rem;">
+                    <strong>4. Science Fiction = Science + Fiction:</strong> It's okay for movies to take liberties—that's 
+                    what makes them inspiring and entertaining.
+                </p>
+                <p style="margin-top: 2rem; font-style: italic; text-align: center; font-size: 1.2rem; color: var(--bg-maroon);">
+                    "Everything in the world is inherently connected to mathematics."
                 </p>
             </div>
         </div>
@@ -108,6 +296,16 @@
                 <div class="link">
                     <i class="fa-brands fa-linkedin"></i>
                     <a href="https://www.linkedin.com/in/constructor-university-maths-society-768a13388/" target="_blank">LinkedIn</a>
+                </div>
+                <div class="link">
+                    <i class="fa-solid fa-share"></i>
+                    <a href="https://login.microsoftonline.com/f78e973e-5c0b-4ab8-bbd7-9887c95a8ebd/oauth2/authorize?client%5Fid=00000003%2D0000%2D0ff1%2Dce00%2D000000000000&response%5Fmode=form%5Fpost&response%5Ftype=code%20id%5Ftoken&resource=00000003%2D0000%2D0ff1%2Dce00%2D000000000000&scope=openid&nonce=760C08CB1EEF8BE83CC3B1914A97BD00EEDAB8A0CA433156%2D588466EE8EA0419D2AE9F444B4B962BE29922E1DC4A2BE080DCAC7BAF02D9225&redirect%5Furi=https%3A%2F%2Fconstructoruniversity%2Esharepoint%2Ecom%2F%5Fforms%2Fdefault%2Easpx&state=OD0w&claims=%7B%22id%5Ftoken%22%3A%7B%22xms%5Fcc%22%3A%7B%22values%22%3A%5B%22CP1%22%5D%7D%7D%7D&wsucxt=1&cobrandid=11bd8083%2D87e0%2D41b5%2Dbb78%2D0bc43c8a8e8a&client%2Drequest%2Did=4970d6a1%2D60d1%2De000%2D714b%2D67dfac5f9438" target="_blank">
+                        Sharepoint
+                    </a>
+                </div>
+                <div class="link">
+                    <i class="fa-brands fa-youtube"></i>
+                    <a href="https://www.youtube.com/@MathClubCUB" target="_blank">Youtube</a>
                 </div>
                 <div class="link">
                     <i class="fa-brands fa-github"></i>
