@@ -157,6 +157,21 @@ body {
     margin-bottom: 0.5rem;
 }
 
+.content-block {
+    text-align: left;
+    padding: 2rem;
+}
+
+.content-block h2 {
+    color: var(--text-maroon);
+    border-bottom: 3px solid var(--bg-maroon);
+    padding-bottom: 0.5rem;
+}
+
+.content-block p {
+    color: var(--text-maroon);
+}
+
 
 /* --- Footer --- */
 footer {
