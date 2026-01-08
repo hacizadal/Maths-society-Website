@@ -16,7 +16,7 @@
             height: 0;
             overflow: hidden;
             max-width: 900px;
-            margin: 2rem auto;
+            margin: 2.5rem auto;
             border-radius: 8px;
             box-shadow: 0 4px 12px rgba(128, 0, 0, 0.3);
         }
@@ -34,6 +34,50 @@
             border-left: 4px solid var(--bg-maroon);
             margin: 1.5rem 0;
             border-radius: 4px;
+        }
+        .equation-box {
+            background-color: rgba(128, 0, 0, 0.05);
+            padding: 1.25rem;
+            margin: 1.5rem 0;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            font-size: 1.05rem;
+            text-align: center;
+        }
+        .intro-emphasis {
+            font-size: 1.2rem;
+            line-height: 1.9;
+            margin: 2rem 0;
+            padding-left: 1rem;
+            border-left: 3px solid rgba(128, 0, 0, 0.3);
+        }
+        .key-takeaway {
+            background-color: rgba(128, 0, 0, 0.05);
+            padding: 1.25rem;
+            margin: 1.5rem 0;
+            border-radius: 4px;
+            font-size: 1.05rem;
+        }
+        .section-divider {
+            text-align: center;
+            margin: 3rem 0;
+            color: var(--bg-maroon);
+            font-size: 1.5rem;
+        }
+        h2 {
+            color: var(--bg-maroon);
+            margin-top: 3.5rem;
+            font-size: 2rem;
+        }
+        h3 {
+            color: var(--text-maroon);
+            margin-top: 2rem;
+            font-size: 1.4rem;
+        }
+        .movie-detail {
+            font-style: italic;
+            color: var(--text-maroon);
+            margin: 0.5rem 0;
         }
     </style>
 </head>
@@ -65,8 +109,8 @@
     <!--HERO SECTION-->
     <section id="hero">
         <div class="hero-content">
-            <h1>When Math Meets Cinema</h1>
-            <p style="font-size: 1.3rem; margin-top: 1rem; max-width: 800px;">Interstellar: Where Hollywood Actually Got the Physics Right (Mostly)</p>
+            <h1>When Mathematics Reaches for the Stars</h1>
+            <p style="font-size: 1.3rem; margin-top: 1rem; max-width: 800px;">How Interstellar Used Real Physics to Bend Time and Space</p>
         </div>
     </section>
 
@@ -74,19 +118,34 @@
     <section id="explanation">
         <div class="container" style="max-width: 900px;">
             <div class="content-block">
-                <p style="font-size: 1.15rem; line-height: 1.8;">
-                    <em>Did time really slow down during that movie, or was it just us being mesmerized?</em><br>
-                    Turns out, both can be true when you're watching Interstellar!
+                <!-- OPENING HOOK -->
+                <p style="font-size: 1.2rem; line-height: 1.9; font-style: italic;">
+                    Did time really slow down during that movie, or were we just mesmerized by the spectacle?
                 </p>
                 
-                <p style="margin-top: 1.5rem;">
-                    Our seminar on <strong>Interstellar</strong> was presented by <strong>Pratikeet</strong> (freshman) 
-                    and <strong>Tashar</strong> (second-year). They explored one of cinema's most scientifically ambitious films—
-                    a movie that collaborated with Nobel Prize-winning physicist <strong>Kip Thorne</strong> to create the most 
-                    accurate black hole visualization ever seen on screen.
+                <p class="intro-emphasis">
+                    This was the second episode of <strong>"The Math Behind..."</strong> series, where we explored the 
+                    mathematics and physics behind Christopher Nolan's <strong>Interstellar</strong>. Presented by 
+                    <strong>Pratikeet</strong> (freshman) and <strong>Tashar</strong> (second-year), the seminar tackled 
+                    one of cinema's most scientifically ambitious films—a movie that didn't just use physics as window 
+                    dressing, but as the very foundation of its storytelling.
                 </p>
 
-                <h2 style="margin-top: 2rem;">Watch the Full Seminar</h2>
+                <div class="highlight-box">
+                    <strong>What Makes Interstellar Special:</strong> Unlike most sci-fi films, Interstellar collaborated 
+                    with Nobel Prize-winning physicist <strong>Kip Thorne</strong>, who derived actual equations for the 
+                    visual effects team. When the first real black hole image was captured years later, it looked remarkably 
+                    similar to the film's Gargantua.
+                </div>
+
+                <!-- VIDEO SECTION -->
+                <h2>Experience the Full Journey</h2>
+                
+                <p>
+                    Watch how Pratikeet and Tashar unravel the mathematics behind one of the most visually stunning films 
+                    ever made, from tidal waves on Miller's planet to the geometry of tesseracts:
+                </p>
+
                 <div class="video-container">
                     <iframe 
                         src="https://www.youtube.com/embed/3kiHD9kYGrc" 
@@ -95,96 +154,256 @@
                         allowfullscreen>
                     </iframe>
                 </div>
-                <p style="text-align: center; font-style: italic; margin-top: 1rem;">
+                <p style="text-align: center; font-style: italic; margin-top: 1rem; color: var(--text-maroon);">
                     Math Society Topic Tutorial Series - Episode 2
                 </p>
 
-                <h2 style="margin-top: 3rem;">The Big Questions</h2>
+                <!-- MOVIE CONTEXT -->
+                <h2>The Film That Dared to Calculate</h2>
                 
-                <h3 style="color: var(--bg-maroon); margin-top: 2rem;">Question 1: How Far is Miller's Planet from Gargantua?</h3>
                 <p>
-                    Miller's planet experiences extreme time dilation where <strong>1 hour on the planet equals 7 years on Earth</strong>. 
-                    The planet also features massive tidal waves 1.2 km high, caused by Gargantua's immense gravitational pull.
+                    Interstellar tells the story of Cooper, a former NASA pilot who ventures through a wormhole near Saturn 
+                    to find humanity a new home. But what elevates the film beyond typical science fiction is its commitment 
+                    to mathematical accuracy. Every spectacular visual—from the warped spacetime near black holes to the 
+                    time dilation on water worlds—is grounded in Einstein's equations.
                 </p>
-                
-                <p style="margin-top: 1rem;">
-                    Using tidal acceleration formulas and the work-energy theorem, we can calculate that the planet sits approximately 
-                    <strong>4.5 billion km</strong> from Gargantua's center. This involves integrating gravitational forces and 
-                    applying conservation of energy principles.
-                </p>
-                
-                <div class="highlight-box">
-                    <strong>The Mathematical Challenge:</strong> When we calculate the actual time dilation factor at this distance 
-                    using Einstein's equations, we get approximately <strong>1.05</strong>—far from the movie's required factor of 
-                    <strong>6,000</strong>. This reveals where the film prioritizes dramatic storytelling over strict mathematical accuracy.
+
+                <div class="key-takeaway">
+                    <p class="movie-detail"><strong>Music:</strong> Hans Zimmer's iconic score features ticking at 1.25-second 
+                    intervals—each tick representing one day passing on Earth while the crew is on Miller's planet.</p>
+                    
+                    <p class="movie-detail"><strong>Time Since Release:</strong> Since Interstellar premiered in 2014, 
+                    approximately 1 hour and 34 minutes have passed on Miller's planet (while over a decade has passed for us).</p>
+                    
+                    <p class="movie-detail"><strong>Scientific Advisor:</strong> Kip Thorne not only advised—he wrote 
+                    equations that governed how light rays would curve around a spinning black hole, giving visual effects 
+                    artists the mathematical tools to render the impossible.</p>
                 </div>
 
-                <h3 style="color: var(--bg-maroon); margin-top: 2rem;">Question 2: Why Wasn't Cooper "Spaghettified"?</h3>
-                <p>
-                    In conventional black hole physics, tidal forces would tear apart anything approaching the event horizon. 
-                    The movie's solution involves <strong>brane cosmology</strong>—a theoretical framework from string theory where 
-                    our universe exists as a three-dimensional "brane" embedded in higher-dimensional space.
-                </p>
+                <!-- QUESTION 1: MILLER'S PLANET -->
+                <h2>Question 1: How Far Is Miller's Planet from Gargantua?</h2>
                 
-                <p style="margin-top: 1rem;">
-                    The key concept is <strong>Anti-de Sitter (AdS) space</strong>, which has negative curvature. In this geometry, 
-                    distances become compressed—what would be 10 billion light-years in normal space gets crumpled down to 
-                    approximately 1 Astronomical Unit (150 million km). This is a compression ratio of about <strong>67 million to 1</strong>.
+                <p>
+                    The film's most dramatic time dilation occurs on Miller's planet, where <strong>1 hour equals 7 years 
+                    on Earth</strong>. The planet sits dangerously close to Gargantua, the supermassive black hole, resulting 
+                    in both extreme time dilation and monstrous 1.2-kilometer-high tidal waves.
                 </p>
 
-                <p style="margin-top: 1rem;">
-                    This is described mathematically by Einstein's field equations, where the cosmological constant (Λ) determines 
-                    the curvature of spacetime. The solution gives us a metric where space itself warps differently than in our 
-                    familiar universe.
+                <h3>The Mathematical Setup</h3>
+                <p>
+                    To find the distance, we need to balance two competing forces: the gravitational pull from Gargantua 
+                    creating the tides, and the energy required to lift ocean water to those heights. This involves:
+                </p>
+
+                <p style="margin-top: 1rem; padding-left: 1.5rem;">
+                    <strong>1. Tidal Acceleration</strong> — How Gargantua's gravity varies across Miller's planet<br>
+                    <strong>2. Work-Energy Theorem</strong> — Energy needed to create 1.2 km waves<br>
+                    <strong>3. Mean Value Theorem</strong> — Finding average acceleration across the wave height<br>
+                    <strong>4. Conservation of Energy</strong> — Equating gravitational work with potential energy
+                </p>
+
+                <div class="equation-box">
+                    Tidal Acceleration: a⃗ ≈ (G·M·y) / d³<br><br>
+                    After integration and algebraic manipulation:<br><br>
+                    <strong>d = ∛(3·M·R⁴ / (2·m·H))</strong><br><br>
+                    Result: <strong>4.5 billion kilometers</strong> from Gargantua's center
+                </div>
+
+                <h3>The Problem: When Physics Disagrees with Drama</h3>
+                <p>
+                    Here's where the math reveals the fiction in science fiction. Using Einstein's equations for time 
+                    dilation near a massive object, we can calculate the <em>actual</em> time dilation factor at 4.5 billion 
+                    kilometers from Gargantua.
                 </p>
 
                 <div class="highlight-box">
-                    <strong>The Physical Limitation:</strong> Even with compressed space, Cooper's apparently instantaneous 
-                    communication with Murph presents a problem. Light still requires 8.3 minutes to travel 1 AU, and the 
-                    No-Communication Theorem tells us that even quantum entanglement can't transmit information faster than light.
+                    <strong>Expected from the movie:</strong> Time dilation factor = 6,000 (1 hour = 7 years)<br>
+                    <strong>Calculated from relativity:</strong> Time dilation factor ≈ 1.05<br><br>
+                    <strong>The Verdict:</strong> The movie's dramatic time dilation is mathematically impossible at that 
+                    distance. To achieve the film's effect, Miller's planet would need to be so close to Gargantua that it 
+                    would be torn apart by tidal forces—or already inside the black hole itself.
                 </div>
 
-                <h2 style="margin-top: 3rem;">What We Learned</h2>
+                <p style="margin-top: 1rem;">
+                    This is where Nolan and Thorne made a conscious choice: prioritize emotional impact over strict 
+                    mathematical accuracy. And honestly? It works. The tension of watching those waves approach while knowing 
+                    decades are passing on Earth creates one of cinema's most anxiety-inducing sequences.
+                </p>
+
+                <div class="section-divider">⋆ ✦ ⋆</div>
+
+                <!-- QUESTION 2: COOPER'S SURVIVAL -->
+                <h2>Question 2: Why Wasn't Cooper Torn Apart?</h2>
                 
-                <p style="font-size: 1.1rem; line-height: 1.8;">
-                    <strong>1. Scientific Rigor in Cinema:</strong> Interstellar stands out as one of the most scientifically 
-                    grounded science fiction films. Kip Thorne derived actual equations for the visual effects team, and when 
-                    the first real black hole image was captured by the Event Horizon Telescope, it bore remarkable similarity 
-                    to Gargantua.
+                <p style="font-size: 1.15rem; line-height: 1.8;">
+                    When Cooper falls into Gargantua, he should have been "spaghettified"—stretched into a thin stream of 
+                    atoms by tidal forces. Instead, he finds himself in a tesseract, able to interact with different moments 
+                    in his daughter Murph's life. How is this possible?
                 </p>
 
-                <p style="font-size: 1.1rem; line-height: 1.8; margin-top: 1rem;">
-                    <strong>2. The Beauty of Mathematical Physics:</strong> The film showcases concepts from general relativity, 
-                    tensor calculus, and higher-dimensional geometry. From time dilation near massive objects to the structure 
-                    of spacetime itself, these are real areas of active physics research.
-                </p>
-
-                <p style="font-size: 1.1rem; line-height: 1.8; margin-top: 1rem;">
-                    <strong>3. Where Science Meets Art:</strong> Even Kip Thorne acknowledges that some liberties were taken 
-                    for dramatic effect. The important part is that the film introduces audiences to legitimate physics concepts 
-                    and inspires curiosity about the mathematical universe we inhabit.
-                </p>
-
-                <p style="font-size: 1.1rem; line-height: 1.8; margin-top: 1rem;">
-                    <strong>4. Attention to Detail:</strong> Small touches like Hans Zimmer's score featuring ticking at 
-                    1.25-second intervals (each tick representing 1 day on Earth) show how thoroughly mathematics was woven 
-                    into every aspect of the film.
-                </p>
-
-                <p style="margin-top: 2rem; font-style: italic; text-align: center; font-size: 1.2rem; color: var(--bg-maroon);">
-                    "In the past week, I've learned tensors, tensor calculus, half of general relativity, and I'm sure I'll forget 
-                    this very soon, but the experience is what matters." <br>— Pratikeet
-                </p>
-
-                <h2 style="margin-top: 3rem;">Further Exploration</h2>
+                <h3>Enter Brane Cosmology</h3>
                 <p>
-                    For those interested in diving deeper, <strong>"The Science of Interstellar"</strong> by Kip Thorne provides 
-                    an accessible yet rigorous explanation of the physics behind the film. Topics covered include black hole physics, 
-                    wormholes, time dilation, and the Einstein field equations that govern spacetime curvature.
+                    The film invokes concepts from string theory, specifically <strong>brane cosmology</strong>. Here's the idea: 
+                    our entire universe is a three-dimensional "brane" (short for membrane) floating in a higher-dimensional space. 
+                    There are two "confining branes" on either side of our universe that normally don't interact with us.
                 </p>
 
-                <p style="margin-top: 1.5rem; font-style: italic;">
-                    And remember: if time travel ever becomes possible, don't forget to tell your past self to attend more Math Society events!
+                <p style="margin-top: 1rem;">
+                    When Cooper falls through Gargantua, he's transferred from our brane to one of these confining branes—a 
+                    space where the usual rules don't apply. This confining brane is described by <strong>Anti-de Sitter (AdS) 
+                    space</strong>, which has fundamentally different geometry than our familiar universe.
+                </p>
+
+                <h3>The Geometry of Curved Spacetime</h3>
+                <p>
+                    To understand AdS space, we need Einstein's field equations—the fundamental equations that describe how 
+                    mass and energy curve spacetime:
+                </p>
+
+                <div class="equation-box">
+                    Einstein's Field Equations:<br><br>
+                    R<sub>μν</sub> - (1/2)g<sub>μν</sub>·R = Λ·g<sub>μν</sub><br><br>
+                    Left side: Describes how spacetime curves<br>
+                    Right side: The geometry of space<br>
+                    Λ: Cosmological constant (determines the shape of the universe)
+                </div>
+
+                <p>
+                    These tensor equations can be reduced to a differential equation that we can actually solve. The solution 
+                    depends critically on whether the cosmological constant (Λ) is positive or negative:
+                </p>
+
+                <div class="key-takeaway">
+                    <strong>De Sitter Space (Λ > 0):</strong> Positive curvature. Distances are <em>enlarged</em>. 
+                    Space curves like the surface of a sphere.<br><br>
+                    
+                    <strong>Anti-de Sitter Space (Λ < 0):</strong> Negative curvature. Distances are <em>compressed</em>. 
+                    Space curves like a saddle. This is what Cooper experiences.
+                </div>
+
+                <div class="equation-box">
+                    Solution for Anti-de Sitter Space:<br><br>
+                    f(r) = √(1 + r²/R²)<br><br>
+                    This function describes how distances are "crumpled" in AdS space
+                </div>
+
+                <h3>The Distance Compression Effect</h3>
+                <p style="font-size: 1.15rem; line-height: 1.8;">
+                    Here's the mind-bending part: in our normal brane, the distance from Gargantua to Earth is approximately 
+                    <strong>10 billion light-years</strong>. But in the confining brane where Cooper exists, that same distance 
+                    is compressed down to just <strong>1 Astronomical Unit (AU)</strong>—the distance from Earth to the Sun, 
+                    about 150 million kilometers.
+                </p>
+
+                <p style="font-size: 1.15rem; line-height: 1.8; margin-top: 1rem;">
+                    That's a compression ratio of roughly <strong>67 million to 1</strong>. Space itself is crumpled like 
+                    a piece of paper, allowing Cooper to reach across what should be impossible distances.
+                </p>
+
+                <div class="highlight-box">
+                    <strong>How the Tesseract Works:</strong> The five-dimensional tesseract allows Cooper to see Murph's 
+                    bedroom as a three-dimensional object existing across time. He can reach into different moments 
+                    simultaneously because time is represented spatially in higher dimensions. This is mathematically 
+                    consistent with how higher-dimensional beings could perceive our four-dimensional spacetime.
+                </div>
+
+                <!-- THE PROBLEMS -->
+                <h2>Where the Mathematics Breaks Down</h2>
+                
+                <p>
+                    Even with these exotic physics concepts, the film still takes liberties that venture beyond established 
+                    science:
+                </p>
+
+                <h3>Problem 1: Faster-Than-Light Communication</h3>
+                <p>
+                    Even in compressed AdS space, light still needs <strong>8.3 minutes</strong> to travel 1 AU. Yet Cooper's 
+                    gravitational waves seem to reach Murph instantaneously. The film never explains this violation of 
+                    causality.
+                </p>
+
+                <h3>Problem 2: Quantum Entanglement Doesn't Help</h3>
+                <p>
+                    Some fans speculate that quantum entanglement allows the instant communication. Unfortunately, the 
+                    <strong>No-Communication Theorem</strong> in quantum mechanics proves that entanglement cannot transmit 
+                    information faster than light. Even if gravitational waves were quantum in nature, they couldn't bypass 
+                    this fundamental limit.
+                </p>
+
+                <div class="equation-box">
+                    The No-Communication Theorem:<br><br>
+                    Two quantum-entangled observers CANNOT exchange<br>
+                    information faster than the speed of light
+                </div>
+
+                <h3>Problem 3: The Absent Spaghettification</h3>
+                <p>
+                    While brane cosmology is real physics, there's no established theory for how it would prevent tidal 
+                    forces from destroying a human body. The film essentially invents a mechanism that, while mathematically 
+                    expressible, isn't supported by current physics.
+                </p>
+
+                <h3>Problem 4: Brane Instability</h3>
+                <p>
+                    If confining branes were constantly pressing on our universe as the model suggests, the branes would 
+                    eventually buckle and the universe would collapse. The stability problem remains unsolved in brane 
+                    cosmology.
+                </p>
+
+                <div class="section-divider">⋆ ✦ ⋆</div>
+
+                <!-- WHAT WE LEARNED -->
+                <h2>Beyond the Screen: What Interstellar Teaches Us</h2>
+                
+                <p style="font-size: 1.15rem; line-height: 1.8;">
+                    <strong>1. Science Fiction Can Be Responsible:</strong> While taking necessary liberties for storytelling, 
+                    Interstellar shows that filmmakers can respect real physics and still create compelling drama. The film 
+                    introduces audiences to legitimate concepts from general relativity and string theory.
+                </p>
+
+                <p style="font-size: 1.15rem; line-height: 1.8; margin-top: 1rem;">
+                    <strong>2. Mathematics Describes the Impossible:</strong> The tools we use—tensor calculus, differential 
+                    equations, Einstein's field equations—can describe universes with radically different properties than ours. 
+                    The fact that we can mathematically model AdS space doesn't mean it exists, but it shows the power of 
+                    mathematics to explore possibilities.
+                </p>
+
+                <p style="font-size: 1.15rem; line-height: 1.8; margin-top: 1rem;">
+                    <strong>3. Attention to Detail Matters:</strong> From Zimmer's ticking score to the accurate rendering of 
+                    gravitational lensing around Gargantua, Interstellar demonstrates that when you get the small details right, 
+                    the overall experience becomes transcendent.
+                </p>
+
+                <p style="font-size: 1.15rem; line-height: 1.8; margin-top: 1rem;">
+                    <strong>4. The Journey of Learning:</strong> As Pratikeet noted, he learned tensors, tensor calculus, 
+                    and general relativity in just one week to prepare for this presentation. The point isn't perfection—it's 
+                    the willingness to dive deep into complex mathematics because you're passionate about understanding.
+                </p>
+
+                <div class="highlight-box" style="margin-top: 2rem;">
+                    <strong>The Bigger Picture:</strong> Interstellar's inconsistencies aren't failures—they're invitations. 
+                    They show us the frontiers of physics where our current understanding ends and inspire the next generation 
+                    to push those boundaries further.
+                </div>
+
+                <!-- CLOSING -->
+                <p style="margin-top: 2.5rem; font-size: 1.2rem; line-height: 1.9; font-style: italic; text-align: center; color: var(--bg-maroon);">
+                    "In the past week, I've learned tensors, tensor calculus, half of general relativity, and I'm sure I'll 
+                    forget this very soon, but the experience is what matters."
+                </p>
+                <p style="text-align: center; font-size: 1.1rem; margin-top: 0.5rem;">
+                    — Pratikeet, Freshman
+                </p>
+
+                <p style="margin-top: 2.5rem; font-size: 1.15rem; line-height: 1.8;">
+                    Everything in the universe is connected to mathematics—even the stories we tell ourselves about traveling 
+                    through black holes to save humanity. By exploring the math behind what we love, we gain not just knowledge, 
+                    but a deeper appreciation for the elegant structure underlying reality itself.
+                </p>
+
+                <p style="margin-top: 1.5rem; font-size: 1.15rem; line-height: 1.8; text-align: center; font-style: italic;">
+                    And remember: if time travel ever becomes possible, don't forget to tell your past self to attend more 
+                    Math Society events!
                 </p>
             </div>
         </div>
