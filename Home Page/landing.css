@@ -6,7 +6,8 @@
     --text-maroon: #800000;
     --font-main: "Roboto Slab", serif;
 }
-html{
+
+html {
     scroll-behavior: smooth;
 }
 
@@ -25,10 +26,10 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: var(--bg-maroon); 
+    background-color: var(--bg-maroon);
     padding: 2rem 2rem;
     z-index: 1000;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .nav-container {
@@ -40,7 +41,7 @@ body {
 }
 
 .nav-logo {
-    height: 50px; 
+    height: 50px;
 }
 
 .nav-links {
@@ -61,11 +62,18 @@ body {
     opacity: 0.8;
 }
 
+.nav-links a.active {
+    border-bottom: 3px solid var(--text-beige);
+    padding-bottom: 5px;
+}
+
 .hamburger {
-    display: none; /* Hidden on desktop */
+    display: none;
+    /* Hidden on desktop */
     cursor: pointer;
 }
-.logo_title{
+
+.logo_title {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -83,7 +91,8 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding-top: 60px; /* Offset for fixed navbar */
+    padding-top: 60px;
+    /* Offset for fixed navbar */
 }
 
 .hero-logo {
@@ -96,6 +105,7 @@ body {
     font-weight: 900;
     padding-bottom: 30px;
 }
+
 #hero a {
     text-decoration: none;
     background-color: var(--text-maroon);
@@ -150,13 +160,15 @@ body {
     font-size: 1.5rem;
     margin-bottom: 0.5rem;
 }
-#team{
+
+#team {
     background-color: var(--bg-maroon);
     color: var(--text-beige);
     padding: 4rem 2rem;
     text-align: center;
 }
-#team h2{
+
+#team h2 {
     font-size: 2.5rem;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -182,21 +194,24 @@ footer {
     color: var(--text-beige);
     text-decoration: underline;
 }
-.link{
+
+.link {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
-.link a{
+
+.link a {
     text-decoration: none;
 }
+
 /* --- Mobile Responsiveness --- */
 @media (max-width: 768px) {
     .hamburger {
         display: block;
     }
-    
+
     .hamburger span {
         display: block;
         width: 25px;
@@ -228,9 +243,11 @@ footer {
         font-size: 3.3rem;
     }
 }
+
 /*Stretching the navbar on desktop*/
 @media (min-width: 769px) {
     .nav-container {
-        max-width: 95%; /* Stretches the content wide */
+        max-width: 95%;
+        /* Stretches the content wide */
     }
 }
