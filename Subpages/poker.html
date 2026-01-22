@@ -11,6 +11,25 @@
     <link rel="stylesheet" href="../Home Page/landing.css">
     <script src="https://kit.fontawesome.com/a2bed480e7.js" crossorigin="anonymous"></script>
     <style>
+        #hero {
+            min-height: auto !important;
+            height: auto !important;
+            max-height: none !important;
+            padding-top: 180px !important;
+            padding-bottom: 2.5rem !important;
+            display: block !important;
+        }
+
+        .hero-content {
+            padding-top: 0 !important;
+            padding-bottom: 0 !important;
+        }
+
+        #explanation {
+            padding-top: 3rem !important;
+            margin-top: 0 !important;
+        }
+
         .highlight-box {
             background-color: rgba(128, 0, 0, 0.1);
             padding: 1.5rem;
@@ -88,12 +107,11 @@
             </div>
             <ul class="nav-links">
                 <li><a href="../Home Page/landing.html" class="nav-link">Home</a></li>
-                <li><a href="https://constructor-math.github.io/ai-event/" target="_blank">AI/ML</a></li>
-                <li><a href="https://constructor-math.github.io/integration-bee/" target="_blank">Integration Bee</a>
-                </li>
-                <li><a href="https://constructor-math.github.io/ugs/" target="_blank">UGS</a></li>
-                <li><a href="../Home Page/new.html" target="_blank">Olympiad</a></li>
-                <li><a href="poker.html" class="nav-link">Poker</a></li>
+                <li><a href="ai-ml.html" class="nav-link">AI/ML</a></li>
+                <li><a href="https://constructor-math.github.io/integration-bee/" target="_blank" class="nav-link">Integration Bee</a></li>
+                <li><a href="ugs.html" class="nav-link">UGS</a></li>
+                <li><a href="olympiad.html" class="nav-link">Olympiad</a></li>
+                <li><a href="poker.html" class="nav-link active">Poker</a></li>
                 <li><a href="interstellar.html" class="nav-link">Interstellar</a></li>
             </ul>
             <div class="hamburger">
@@ -105,20 +123,21 @@
     </nav>
 
     <!--HERO SECTION-->
-    <section id="hero">
-        <div class="hero-content">
-            <h1>The Mathematics of Deception</h1>
-            <p style="font-size: 1.3rem; margin-top: 1rem; max-width: 800px;">Why Bluffing Works: A Mathematical Proof
+    <section id="hero" style="padding-top: 0; padding-bottom: 0; min-height: auto; margin-top: 0;">
+        <div class="hero-content" style="text-align: center; padding-top: 1rem;">
+            <h1 style="margin-top: 0;">The Mathematics of Deception</h1>
+            <p style="font-size: 1.3rem; margin-top: 0.5rem; max-width: 800px; margin-left: auto; margin-right: auto;">
+                Why Bluffing Works: A Mathematical Proof
             </p>
         </div>
     </section>
 
     <!--CONTENT-->
-    <section id="explanation">
-        <div class="container" style="max-width: 900px;">
-            <div class="content-block">
+    <section id="explanation" style="padding: 0; margin: 0; padding-bottom: 3rem;">
+        <div class="container" style="max-width: 900px; padding-top: 0; margin-top: 0;">
+            <div class="content-block" style="padding-top: 0; margin-top: 0; padding-bottom: 2rem;">
                 <!-- OPENING HOOK -->
-                <p style="font-size: 1.2rem; line-height: 1.9; font-style: italic;">
+                <p style="font-size: 1.2rem; line-height: 1.9; font-style: italic; margin-top: 0; padding-top: 0.5rem;">
                     Can mathematics prove that lying pays off? In poker, the answer is surprisingly—yes.
                 </p>
 
@@ -153,55 +172,56 @@
                 <p style="margin-top: 1rem;">
                     The progression was masterful: we started with basic probability, moved into understanding expected
                     outcomes,
-                    and then explored how these concepts prove that bluffing isn't just a trick—it's a requirement for
-                    optimal play.
+                    and gradually built up to game-theoretic equilibrium. Each step revealed why certain strategies
+                    dominate others,
+                    and why pure strategies (never bluffing or always bluffing) fail against intelligent opponents.
                 </p>
 
                 <div class="image-container">
-                    <img src="images/poker-lecture1.jpg" alt="Professor Mallahi Karai explaining game theory">
-                    <p class="image-caption">Professor Keivan Mallahi-Karai breaking down the mathematical foundations
-                    </p>
+                    <img src="images/poker-lecture1.jpg" alt="Professor teaching game theory">
+                    <p class="image-caption">Professor Mallahi-Karai explaining the mathematical foundations of optimal
+                        poker strategy</p>
                 </div>
 
                 <div class="image-container">
-                    <img src="images/poker-lecture2.jpg" alt="Rock-Paper-Scissors game theory">
-                    <p class="image-caption">From rock-paper-scissors to poker: understanding strategic thinking</p>
+                    <img src="images/poker-lecture2.jpg" alt="Lecture on poker mathematics">
+                    <p class="image-caption">Building the theory: from probability to game theory equilibrium</p>
                 </div>
 
-                <!-- KEY MATHEMATICAL INSIGHTS -->
-                <h2>The Mathematics of Bluffing</h2>
+                <!-- THE MATHEMATICAL PROOF -->
+                <h2>The Proof: Why You Must Bluff</h2>
 
-                <h3>Why Being Predictable Loses</h3>
-                <p>
-                    Imagine you only bet when you have strong hands. Your opponents quickly learn this pattern and
-                    simply fold
-                    whenever you bet. Your strong hands stop winning money because everyone folds before you can collect
-                    the pot.
-                    This is the fundamental problem with predictable play.
+                <p style="font-size: 1.15rem; line-height: 1.8;">
+                    Here's the mathematical argument: Suppose you never bluff. Your opponent knows that when you bet
+                    big,
+                    you have a
+                    strong hand. They can simply fold every time, minimizing their losses. You win small pots but never
+                    extract
+                    maximum value from your strong hands.
                 </p>
 
-                <p style="margin-top: 1rem;">
-                    On the flip side, if you always bluff with weak hands, opponents learn to call you down with
-                    anything decent.
-                    You become easy to exploit.
+                <p style="font-size: 1.15rem; line-height: 1.8; margin-top: 1rem;">
+                    Now suppose you always bluff with weak hands. Your opponent catches on and calls every time. Now
+                    you're
+                    losing money on your bluffs while not getting enough value from your strong hands either.
                 </p>
 
-                <div class="key-takeaway">
-                    <strong>The Mathematical Truth:</strong> Any predictable strategy—always doing the same thing in the
-                    same
-                    situation—can be beaten. Mathematics proves that winning poker requires mixing up your play in
-                    calculated ways.
+                <p style="font-size: 1.15rem; line-height: 1.8; margin-top: 1rem;">
+                    The mathematical sweet spot? Mix your strategies. Bluff just often enough that your opponent can't
+                    profitably
+                    fold all the time, but not so often that they can profitably call all the time. This is called a
+                    mixed strategy
+                    Nash equilibrium.
+                </p>
+
+                <div class="image-container">
+                    <img src="images/poker-setup.jpg" alt="Poker game setup">
+                    <p class="image-caption">Setting up for the practical session: theory meets practice</p>
                 </div>
 
-                <h3>The Balance That Makes You Unbeatable</h3>
-                <p>
-                    Here's where it gets interesting: when you bluff at the right frequency, you make your opponents
-                    face impossible
-                    decisions. They can't tell if you're strong or weak, and no matter what they do, they can't
-                    consistently beat you.
-                </p>
+                <h3>The Nash Equilibrium</h3>
 
-                <p style="margin-top: 1rem;">
+                <p style="font-size: 1.1rem; line-height: 1.8;">
                     This concept—called game theory optimal (GTO) play—means balancing your strong hands and bluffs in
                     precise
                     proportions. When you achieve this balance, your strategy becomes unexploitable. It doesn't matter
@@ -237,13 +257,13 @@
 
                 <div class="image-container">
                     <img src="images/poker-candy-game.jpg" alt="Poker game with candy stakes">
-                    <p class="image-caption">The sweet stakes of mathematical warfare</p>
+                    <p class="image-caption">Math Society staff as table dealers - betting with candies instead of money
+                    </p>
                 </div>
 
                 <div class="image-container">
                     <img src="images/poker-game1.jpg" alt="Students playing poker">
-                    <p class="image-caption">Applying game theory: students calculating odds and making strategic
-                        decisions</p>
+                    <p class="image-caption">Participants betting on candies while applying game theory strategies</p>
                 </div>
 
                 <div class="key-takeaway">
@@ -255,17 +275,17 @@
 
                 <div class="image-container">
                     <img src="images/poker-game4.jpg" alt="Intense poker game moment">
-                    <p class="image-caption">The moment of decision: call, fold, or raise?</p>
+                    <p class="image-caption">The candy stakes poker game in action with Math Society staff as dealers
+                    </p>
                 </div>
 
                 <div class="image-container">
                     <img src="images/poker-game2.jpg" alt="Poker game in action">
-                    <p class="image-caption">Calculating probabilities while managing the psychological pressure</p>
+                    <p class="image-caption">Testing mathematical equilibrium with candy bets at our poker tables</p>
                 </div>
 
                 <div class="image-container">
                     <img src="images/poker-game3.jpg" alt="Another poker table">
-                    <p class="image-caption">Multiple tables, multiple strategies being explored simultaneously</p>
                 </div>
 
                 <!-- KEY LEARNINGS -->
